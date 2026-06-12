@@ -1,0 +1,5 @@
+[2026-04-13 19:22:22] production.WARNING: Client error: `GET http://www.geoplugin.net/json.gp?ip=::1` resulted in a `403 Forbidden` response:
+{
+  "geoplugin_status":403,
+  "geoplugin_message": "geoPlugin API is no longer available for free use. To continue acces (truncated...)
+  

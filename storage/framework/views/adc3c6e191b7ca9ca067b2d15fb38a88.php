@@ -1,0 +1,151 @@
+<?php echo $__env->make('admin.layouts.components.asset_datatables', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
+
+
+<?php $__env->startSection('title'); ?>
+    <h1>
+        SMS
+    </h1>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('breadcrumb'); ?>
+    <li class="active">SMS</li>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+    <?php echo $__env->make('admin.layouts.components.notifikasi', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
+    <div class="row">
+        <div class="col-md-3">
+            <?php echo $__env->make('admin.sms.navigasi', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        </div>
+        <div class="col-md-9">
+            <div class="box box-info">
+                <div class="box-header with-border">
+                    <?php if(can('u')): ?>
+                        <a href="<?php echo e(ci_route('sms.form.1')); ?>" data-remote="false" data-toggle="modal" data-target="#modalBox" data-title="Tulis Pesan Baru"class="btn btn-social btn-success btn-sm visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block"><i
+                                class='fa fa-plus'></i>Tulis Pesan Baru</a>
+                    <?php endif; ?>
+                    <?php if(can('h')): ?>
+                        <a href="#confirm-delete" title="Hapus Data" onclick="deleteAllBox('mainform', '<?php echo e(ci_route('sms.delete.1')); ?>')" class="btn btn-social btn-danger btn-sm visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block hapus-terpilih"><i
+                                class='fa fa-trash-o'
+                            ></i> Hapus</a>
+                    <?php endif; ?>
+                </div>
+                <div class="box-body">
+                    <?php echo form_open(null, 'id="mainform" name="mainform"'); ?>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover" id="tabeldata">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" id="checkall" /></th>
+                                    <th class="padat">No</th>
+                                    <?php if(can('u')): ?>
+                                        <th>Aksi</th>
+                                    <?php endif; ?>
+                                    <th>Nama</th>
+                                    <th>Nomor HP</th>
+                                    <th>Isi Pesan</th>
+                                    <th>Diterima</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php echo $__env->make('admin.layouts.components.konfirmasi_hapus', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startPush('scripts'); ?>
+    <script>
+        $(document).ready(function() {
+            var TableData = $('#tabeldata').DataTable({
+                responsive: true,
+                processing: true,
+                serverSide: true,
+                ajax: "<?php echo e(ci_route('sms.datatables')); ?>",
+                columns: [{
+                        data: 'ceklist',
+                        class: 'padat',
+                        searchable: false,
+                        orderable: false
+                    },
+                    {
+                        data: 'DT_RowIndex',
+                        class: 'padat',
+                        searchable: false,
+                        orderable: false
+                    },
+                    <?php if(can('u')): ?>
+                        {
+                            data: 'aksi',
+                            class: 'aksi',
+                            searchable: false,
+                            orderable: false
+                        },
+                    <?php endif; ?> {
+                        data: 'nama',
+                        name: 'penduduk.nama',
+                        searchable: false,
+                        orderable: false
+                    },
+                    {
+                        data: 'SenderNumber',
+                        name: 'SenderNumber',
+                        searchable: true,
+                        orderable: true
+                    },
+                    {
+                        data: 'TextDecoded',
+                        name: 'TextDecoded',
+                        searchable: true,
+                        orderable: false
+                    },
+                    {
+                        data: 'ReceivingDateTime',
+                        name: 'ReceivingDateTime',
+                        searchable: true,
+                        orderable: true
+                    },
+                    {
+                        data: 'penduduk.nama',
+                        name: 'penduduk.nama',
+                        searchable: true,
+                        orderable: false,
+                        visible: false,
+                        defaultContent: ''
+                    },
+                    {
+                        data: 'kontak.nama',
+                        name: 'kontak.nama',
+                        searchable: true,
+                        orderable: false,
+                        visible: false,
+                        defaultContent: ''
+                    },
+                ],
+                order: [
+                    <?php if(can('u')): ?>
+                        [4, 'asc']
+                    <?php else: ?>
+                        [3, 'asc']
+                    <?php endif; ?>
+                ]
+            });
+
+            if (hapus == 0) {
+                TableData.column(0).visible(false);
+            }
+
+            if (ubah == 0) {
+                TableData.column(2).visible(false);
+            }
+        });
+    </script>
+<?php $__env->stopPush(); ?>
+
+<?php echo $__env->make('admin.layouts.index', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\OpenSID\resources\views/admin/sms/inbox/index.blade.php ENDPATH**/ ?>

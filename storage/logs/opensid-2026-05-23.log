@@ -1,0 +1,19 @@
+[2026-05-23 20:34:42] production.WARNING: Client error: `GET http://www.geoplugin.net/json.gp?ip=::1` resulted in a `403 Forbidden` response:
+{
+  "geoplugin_status":403,
+  "geoplugin_message": "geoPlugin API is no longer available for free use. To continue acces (truncated...)
+  
+[2026-05-23 21:19:24] production.ERROR: The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist {"exception":"[object] (Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException(code: 0): The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist at C:\xampp\htdocs\OpenSID\vendor\symfony\http-foundation\File\File.php:36)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\donjo-app\controllers\Asset.php(47): Symfony\Component\HttpFoundation\File\File->__construct()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Asset->serveTheme()
+#2 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#3 {main}
+"}
+[2026-05-23 21:19:28] production.ERROR: The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist {"exception":"[object] (Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException(code: 0): The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist at C:\xampp\htdocs\OpenSID\vendor\symfony\http-foundation\File\File.php:36)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\donjo-app\controllers\Asset.php(47): Symfony\Component\HttpFoundation\File\File->__construct()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Asset->serveTheme()
+#2 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#3 {main}
+"}

@@ -1,0 +1,89 @@
+[2026-05-17 21:13:52] production.WARNING: Client error: `GET http://www.geoplugin.net/json.gp?ip=::1` resulted in a `403 Forbidden` response:
+{
+  "geoplugin_status":403,
+  "geoplugin_message": "geoPlugin API is no longer available for free use. To continue acces (truncated...)
+  
+[2026-05-17 22:55:22] production.ERROR: Requested sort(s) `tgl_upload` is not allowed. Allowed sort(s) are `id, nama, tahun, kategori`. {"exception":"[object] (Spatie\QueryBuilder\Exceptions\InvalidSortQuery(code: 0): Requested sort(s) `tgl_upload` is not allowed. Allowed sort(s) are `id, nama, tahun, kategori`. at C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Exceptions\InvalidSortQuery.php:30)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Concerns\SortsQuery.php(113): Spatie\QueryBuilder\Exceptions\InvalidSortQuery::sortsNotAllowed()
+#1 C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Concerns\SortsQuery.php(25): Spatie\QueryBuilder\QueryBuilder->ensureAllSortsExist()
+#2 C:\xampp\htdocs\OpenSID\app\Repositories\ProdukHukumRepository.php(62): Spatie\QueryBuilder\QueryBuilder->allowedSorts()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\controllers\internal_api\ProdukHukum.php(56): App\Repositories\ProdukHukumRepository->list()
+#4 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): ProdukHukum->index()
+#5 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#6 {main}
+"}
+[2026-05-17 22:58:54] production.ERROR: Requested sort(s) `tgl_upload` is not allowed. Allowed sort(s) are `id, nama, tahun, kategori`. {"exception":"[object] (Spatie\QueryBuilder\Exceptions\InvalidSortQuery(code: 0): Requested sort(s) `tgl_upload` is not allowed. Allowed sort(s) are `id, nama, tahun, kategori`. at C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Exceptions\InvalidSortQuery.php:30)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Concerns\SortsQuery.php(113): Spatie\QueryBuilder\Exceptions\InvalidSortQuery::sortsNotAllowed()
+#1 C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Concerns\SortsQuery.php(25): Spatie\QueryBuilder\QueryBuilder->ensureAllSortsExist()
+#2 C:\xampp\htdocs\OpenSID\app\Repositories\ProdukHukumRepository.php(62): Spatie\QueryBuilder\QueryBuilder->allowedSorts()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\controllers\internal_api\ProdukHukum.php(56): App\Repositories\ProdukHukumRepository->list()
+#4 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): ProdukHukum->index()
+#5 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#6 {main}
+"}
+[2026-05-17 23:02:10] production.ERROR: syntax error, unexpected token "," (View: C:\xampp\htdocs\OpenSID\resources\views\admin\layouts\components\kades\_informasi_publik.blade.php) (View: C:\xampp\htdocs\OpenSID\resources\views\admin\layouts\components\kades\_informasi_publik.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): syntax error, unexpected token "," (View: C:\xampp\htdocs\OpenSID\resources\views\admin\layouts\components\kades\_informasi_publik.blade.php) (View: C:\xampp\htdocs\OpenSID\resources\views\admin\layouts\components\kades\_informasi_publik.blade.php) at C:\xampp\htdocs\OpenSID\storage\framework\views\86f0889322805f3a0505162c200f8a12.php:7)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\buku_umum\Dokumen_sekretariat.php(209): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Dokumen_sekretariat->form()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-05-17 23:02:31] production.WARNING: Client error: `GET http://www.geoplugin.net/json.gp?ip=::1` resulted in a `403 Forbidden` response:
+{
+  "geoplugin_status":403,
+  "geoplugin_message": "geoPlugin API is no longer available for free use. To continue acces (truncated...)
+  
+[2026-05-17 23:09:37] production.WARNING: Client error: `GET http://www.geoplugin.net/json.gp?ip=::1` resulted in a `403 Forbidden` response:
+{
+  "geoplugin_status":403,
+  "geoplugin_message": "geoPlugin API is no longer available for free use. To continue acces (truncated...)
+  
+[2026-05-17 23:12:46] production.ERROR: Requested sort(s) `tgl_upload` is not allowed. Allowed sort(s) are `id, nama, tahun, kategori`. {"exception":"[object] (Spatie\QueryBuilder\Exceptions\InvalidSortQuery(code: 0): Requested sort(s) `tgl_upload` is not allowed. Allowed sort(s) are `id, nama, tahun, kategori`. at C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Exceptions\InvalidSortQuery.php:30)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Concerns\SortsQuery.php(113): Spatie\QueryBuilder\Exceptions\InvalidSortQuery::sortsNotAllowed()
+#1 C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Concerns\SortsQuery.php(25): Spatie\QueryBuilder\QueryBuilder->ensureAllSortsExist()
+#2 C:\xampp\htdocs\OpenSID\app\Repositories\ProdukHukumRepository.php(62): Spatie\QueryBuilder\QueryBuilder->allowedSorts()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\controllers\internal_api\ProdukHukum.php(56): App\Repositories\ProdukHukumRepository->list()
+#4 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): ProdukHukum->index()
+#5 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#6 {main}
+"}
+[2026-05-17 23:22:27] production.ERROR: Requested sort(s) `tgl_upload` is not allowed. Allowed sort(s) are `id, nama, tahun, kategori`. {"exception":"[object] (Spatie\QueryBuilder\Exceptions\InvalidSortQuery(code: 0): Requested sort(s) `tgl_upload` is not allowed. Allowed sort(s) are `id, nama, tahun, kategori`. at C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Exceptions\InvalidSortQuery.php:30)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Concerns\SortsQuery.php(113): Spatie\QueryBuilder\Exceptions\InvalidSortQuery::sortsNotAllowed()
+#1 C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Concerns\SortsQuery.php(25): Spatie\QueryBuilder\QueryBuilder->ensureAllSortsExist()
+#2 C:\xampp\htdocs\OpenSID\app\Repositories\ProdukHukumRepository.php(62): Spatie\QueryBuilder\QueryBuilder->allowedSorts()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\controllers\internal_api\ProdukHukum.php(56): App\Repositories\ProdukHukumRepository->list()
+#4 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): ProdukHukum->index()
+#5 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#6 {main}
+"}
+[2026-05-17 23:31:04] production.ERROR: Requested sort(s) `tgl_upload` is not allowed. Allowed sort(s) are `id, nama, tahun, kategori`. {"exception":"[object] (Spatie\QueryBuilder\Exceptions\InvalidSortQuery(code: 0): Requested sort(s) `tgl_upload` is not allowed. Allowed sort(s) are `id, nama, tahun, kategori`. at C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Exceptions\InvalidSortQuery.php:30)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Concerns\SortsQuery.php(113): Spatie\QueryBuilder\Exceptions\InvalidSortQuery::sortsNotAllowed()
+#1 C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Concerns\SortsQuery.php(25): Spatie\QueryBuilder\QueryBuilder->ensureAllSortsExist()
+#2 C:\xampp\htdocs\OpenSID\app\Repositories\ProdukHukumRepository.php(62): Spatie\QueryBuilder\QueryBuilder->allowedSorts()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\controllers\internal_api\ProdukHukum.php(56): App\Repositories\ProdukHukumRepository->list()
+#4 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): ProdukHukum->index()
+#5 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#6 {main}
+"}
+[2026-05-17 23:31:54] production.ERROR: Requested sort(s) `tgl_upload` is not allowed. Allowed sort(s) are `id, nama, tahun, kategori`. {"exception":"[object] (Spatie\QueryBuilder\Exceptions\InvalidSortQuery(code: 0): Requested sort(s) `tgl_upload` is not allowed. Allowed sort(s) are `id, nama, tahun, kategori`. at C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Exceptions\InvalidSortQuery.php:30)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Concerns\SortsQuery.php(113): Spatie\QueryBuilder\Exceptions\InvalidSortQuery::sortsNotAllowed()
+#1 C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Concerns\SortsQuery.php(25): Spatie\QueryBuilder\QueryBuilder->ensureAllSortsExist()
+#2 C:\xampp\htdocs\OpenSID\app\Repositories\ProdukHukumRepository.php(62): Spatie\QueryBuilder\QueryBuilder->allowedSorts()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\controllers\internal_api\ProdukHukum.php(56): App\Repositories\ProdukHukumRepository->list()
+#4 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): ProdukHukum->index()
+#5 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#6 {main}
+"}

@@ -1,0 +1,31 @@
+[2026-05-24 00:42:58] production.ERROR: Requested sort(s) `tgl_upload` is not allowed. Allowed sort(s) are `id, nama, tahun, kategori`. {"exception":"[object] (Spatie\QueryBuilder\Exceptions\InvalidSortQuery(code: 0): Requested sort(s) `tgl_upload` is not allowed. Allowed sort(s) are `id, nama, tahun, kategori`. at C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Exceptions\InvalidSortQuery.php:30)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Concerns\SortsQuery.php(113): Spatie\QueryBuilder\Exceptions\InvalidSortQuery::sortsNotAllowed()
+#1 C:\xampp\htdocs\OpenSID\vendor\spatie\laravel-query-builder\src\Concerns\SortsQuery.php(25): Spatie\QueryBuilder\QueryBuilder->ensureAllSortsExist()
+#2 C:\xampp\htdocs\OpenSID\app\Repositories\ProdukHukumRepository.php(62): Spatie\QueryBuilder\QueryBuilder->allowedSorts()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\controllers\internal_api\ProdukHukum.php(56): App\Repositories\ProdukHukumRepository->list()
+#4 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): ProdukHukum->index()
+#5 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#6 {main}
+"}
+[2026-05-24 01:18:42] production.ERROR: The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist {"exception":"[object] (Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException(code: 0): The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist at C:\xampp\htdocs\OpenSID\vendor\symfony\http-foundation\File\File.php:36)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\donjo-app\controllers\Asset.php(47): Symfony\Component\HttpFoundation\File\File->__construct()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Asset->serveTheme()
+#2 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#3 {main}
+"}
+[2026-05-24 01:18:47] production.ERROR: The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist {"exception":"[object] (Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException(code: 0): The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist at C:\xampp\htdocs\OpenSID\vendor\symfony\http-foundation\File\File.php:36)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\donjo-app\controllers\Asset.php(47): Symfony\Component\HttpFoundation\File\File->__construct()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Asset->serveTheme()
+#2 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#3 {main}
+"}
+[2026-05-24 01:20:05] production.ERROR: The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist {"exception":"[object] (Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException(code: 0): The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist at C:\xampp\htdocs\OpenSID\vendor\symfony\http-foundation\File\File.php:36)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\donjo-app\controllers\Asset.php(47): Symfony\Component\HttpFoundation\File\File->__construct()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Asset->serveTheme()
+#2 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#3 {main}
+"}

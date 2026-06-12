@@ -1,0 +1,141 @@
+[2026-04-06 17:55:36] production.WARNING: Client error: `GET http://www.geoplugin.net/json.gp?ip=::1` resulted in a `403 Forbidden` response:
+{
+  "geoplugin_status":403,
+  "geoplugin_message": "geoPlugin API is no longer available for free use. To continue acces (truncated...)
+  
+[2026-04-06 17:57:46] production.WARNING: Client error: `GET http://www.geoplugin.net/json.gp?ip=::1` resulted in a `403 Forbidden` response:
+{
+  "geoplugin_status":403,
+  "geoplugin_message": "geoPlugin API is no longer available for free use. To continue acces (truncated...)
+  
+[2026-04-06 17:58:00] production.ERROR: Illuminate\Http\Client\RequestException: HTTP request returned status code 401:
+{
+    "message": "Token not provided"
+}
+ in C:\xampp\htdocs\OpenSID\vendor\illuminate\http\Client\Response.php:272
+Stack trace:
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\http\Client\Response.php(289): Illuminate\Http\Client\Response->toException()
+#1 C:\xampp\htdocs\OpenSID\donjo-app\controllers\Theme.php(93): Illuminate\Http\Client\Response->throw()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Theme->index()
+#3 C:\xampp\htdocs\OpenSID\index.php(284): require_once('C:\\xampp\\htdocs...')
+#4 {main}  
+[2026-04-06 17:58:10] production.ERROR: Illuminate\Http\Client\RequestException: HTTP request returned status code 401:
+{
+    "message": "Token not provided"
+}
+ in C:\xampp\htdocs\OpenSID\vendor\illuminate\http\Client\Response.php:272
+Stack trace:
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\http\Client\Response.php(289): Illuminate\Http\Client\Response->toException()
+#1 C:\xampp\htdocs\OpenSID\donjo-app\controllers\Theme.php(93): Illuminate\Http\Client\Response->throw()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Theme->index()
+#3 C:\xampp\htdocs\OpenSID\index.php(284): require_once('C:\\xampp\\htdocs...')
+#4 {main}  
+[2026-04-06 17:58:27] production.ERROR: Illuminate\Http\Client\RequestException: HTTP request returned status code 401:
+{
+    "message": "Token not provided"
+}
+ in C:\xampp\htdocs\OpenSID\vendor\illuminate\http\Client\Response.php:272
+Stack trace:
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\http\Client\Response.php(289): Illuminate\Http\Client\Response->toException()
+#1 C:\xampp\htdocs\OpenSID\donjo-app\controllers\Theme.php(93): Illuminate\Http\Client\Response->throw()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Theme->index()
+#3 C:\xampp\htdocs\OpenSID\index.php(284): require_once('C:\\xampp\\htdocs...')
+#4 {main}  
+[2026-04-06 17:58:35] production.ERROR: The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/images/map-mockup.jpg" does not exist {"exception":"[object] (Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException(code: 0): The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/images/map-mockup.jpg" does not exist at C:\xampp\htdocs\OpenSID\vendor\symfony\http-foundation\File\File.php:36)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\donjo-app\controllers\Asset.php(47): Symfony\Component\HttpFoundation\File\File->__construct()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Asset->serveTheme()
+#2 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#3 {main}
+"}
+[2026-04-06 18:01:30] production.ERROR: The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/images/map-mockup.jpg" does not exist {"exception":"[object] (Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException(code: 0): The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/images/map-mockup.jpg" does not exist at C:\xampp\htdocs\OpenSID\vendor\symfony\http-foundation\File\File.php:36)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\donjo-app\controllers\Asset.php(47): Symfony\Component\HttpFoundation\File\File->__construct()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Asset->serveTheme()
+#2 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#3 {main}
+"}
+[2026-04-06 18:26:37] production.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tipe' in 'where clause' (Connection: default, SQL: select * from `tweb_wil_clusterdesa` where `tipe` = 1 and `tweb_wil_clusterdesa`.`config_id` = 1) (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tipe' in 'where clause' (Connection: default, SQL: select * from `tweb_wil_clusterdesa` where `tipe` = 1 and `tweb_wil_clusterdesa`.`config_id` = 1) (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) at C:\xampp\htdocs\OpenSID\vendor\illuminate\database\Connection.php:829)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(95): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Utama->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-04-06 18:26:39] production.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tipe' in 'where clause' (Connection: default, SQL: select * from `tweb_wil_clusterdesa` where `tipe` = 1 and `tweb_wil_clusterdesa`.`config_id` = 1) (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tipe' in 'where clause' (Connection: default, SQL: select * from `tweb_wil_clusterdesa` where `tipe` = 1 and `tweb_wil_clusterdesa`.`config_id` = 1) (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) at C:\xampp\htdocs\OpenSID\vendor\illuminate\database\Connection.php:829)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(95): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Utama->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-04-06 18:26:48] production.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tipe' in 'where clause' (Connection: default, SQL: select * from `tweb_wil_clusterdesa` where `tipe` = 1 and `tweb_wil_clusterdesa`.`config_id` = 1) (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tipe' in 'where clause' (Connection: default, SQL: select * from `tweb_wil_clusterdesa` where `tipe` = 1 and `tweb_wil_clusterdesa`.`config_id` = 1) (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) at C:\xampp\htdocs\OpenSID\vendor\illuminate\database\Connection.php:829)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(95): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Utama->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-04-06 18:26:52] production.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tipe' in 'where clause' (Connection: default, SQL: select * from `tweb_wil_clusterdesa` where `tipe` = 1 and `tweb_wil_clusterdesa`.`config_id` = 1) (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tipe' in 'where clause' (Connection: default, SQL: select * from `tweb_wil_clusterdesa` where `tipe` = 1 and `tweb_wil_clusterdesa`.`config_id` = 1) (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) at C:\xampp\htdocs\OpenSID\vendor\illuminate\database\Connection.php:829)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(95): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Utama->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-04-06 18:32:06] production.ERROR: Call to undefined function csrf_field() (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): Call to undefined function csrf_field() (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) at C:\xampp\htdocs\OpenSID\storage\framework\views\1fe8071b19e7cf2a2ad5fc91c68e7379.php:382)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(95): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Utama->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-04-06 18:32:08] production.ERROR: Call to undefined function csrf_field() (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): Call to undefined function csrf_field() (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) at C:\xampp\htdocs\OpenSID\storage\framework\views\1fe8071b19e7cf2a2ad5fc91c68e7379.php:382)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(95): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Utama->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}

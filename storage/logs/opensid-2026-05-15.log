@@ -1,0 +1,112 @@
+[2026-05-15 01:56:11] production.ERROR: Too few arguments to function App\Models\Artikel::scopeKategori(), 1 passed in C:\xampp\htdocs\OpenSID\vendor\illuminate\database\Eloquent\Model.php on line 1627 and exactly 2 expected (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): Too few arguments to function App\Models\Artikel::scopeKategori(), 1 passed in C:\xampp\htdocs\OpenSID\vendor\illuminate\database\Eloquent\Model.php on line 1627 and exactly 2 expected (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) at C:\xampp\htdocs\OpenSID\app\Models\Artikel.php:401)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(95): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Utama->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-05-15 01:56:14] production.ERROR: Too few arguments to function App\Models\Artikel::scopeKategori(), 1 passed in C:\xampp\htdocs\OpenSID\vendor\illuminate\database\Eloquent\Model.php on line 1627 and exactly 2 expected (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): Too few arguments to function App\Models\Artikel::scopeKategori(), 1 passed in C:\xampp\htdocs\OpenSID\vendor\illuminate\database\Eloquent\Model.php on line 1627 and exactly 2 expected (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) at C:\xampp\htdocs\OpenSID\app\Models\Artikel.php:401)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(95): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Utama->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-05-15 01:56:31] production.ERROR: Too few arguments to function App\Models\Artikel::scopeKategori(), 1 passed in C:\xampp\htdocs\OpenSID\vendor\illuminate\database\Eloquent\Model.php on line 1627 and exactly 2 expected (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): Too few arguments to function App\Models\Artikel::scopeKategori(), 1 passed in C:\xampp\htdocs\OpenSID\vendor\illuminate\database\Eloquent\Model.php on line 1627 and exactly 2 expected (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) at C:\xampp\htdocs\OpenSID\app\Models\Artikel.php:401)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(95): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Utama->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-05-15 01:56:34] production.ERROR: Too few arguments to function App\Models\Artikel::scopeKategori(), 1 passed in C:\xampp\htdocs\OpenSID\vendor\illuminate\database\Eloquent\Model.php on line 1627 and exactly 2 expected (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): Too few arguments to function App\Models\Artikel::scopeKategori(), 1 passed in C:\xampp\htdocs\OpenSID\vendor\illuminate\database\Eloquent\Model.php on line 1627 and exactly 2 expected (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) at C:\xampp\htdocs\OpenSID\app\Models\Artikel.php:401)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(95): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Utama->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-05-15 01:58:02] production.ERROR: buat_slug(): Argument #1 ($data_slug) must be of type array, App\Models\Artikel given, called in C:\xampp\htdocs\OpenSID\storage\framework\views\1fe8071b19e7cf2a2ad5fc91c68e7379.php on line 588 (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): buat_slug(): Argument #1 ($data_slug) must be of type array, App\Models\Artikel given, called in C:\xampp\htdocs\OpenSID\storage\framework\views\1fe8071b19e7cf2a2ad5fc91c68e7379.php on line 588 (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:983)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(95): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Utama->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-05-15 01:58:06] production.ERROR: buat_slug(): Argument #1 ($data_slug) must be of type array, App\Models\Artikel given, called in C:\xampp\htdocs\OpenSID\storage\framework\views\1fe8071b19e7cf2a2ad5fc91c68e7379.php on line 588 (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): buat_slug(): Argument #1 ($data_slug) must be of type array, App\Models\Artikel given, called in C:\xampp\htdocs\OpenSID\storage\framework\views\1fe8071b19e7cf2a2ad5fc91c68e7379.php on line 588 (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:983)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(95): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Utama->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-05-15 01:58:08] production.ERROR: buat_slug(): Argument #1 ($data_slug) must be of type array, App\Models\Artikel given, called in C:\xampp\htdocs\OpenSID\storage\framework\views\1fe8071b19e7cf2a2ad5fc91c68e7379.php on line 588 (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): buat_slug(): Argument #1 ($data_slug) must be of type array, App\Models\Artikel given, called in C:\xampp\htdocs\OpenSID\storage\framework\views\1fe8071b19e7cf2a2ad5fc91c68e7379.php on line 588 (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:983)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(95): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Utama->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-05-15 01:58:34] production.ERROR: buat_slug(): Argument #1 ($data_slug) must be of type array, App\Models\Artikel given, called in C:\xampp\htdocs\OpenSID\storage\framework\views\1fe8071b19e7cf2a2ad5fc91c68e7379.php on line 588 (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): buat_slug(): Argument #1 ($data_slug) must be of type array, App\Models\Artikel given, called in C:\xampp\htdocs\OpenSID\storage\framework\views\1fe8071b19e7cf2a2ad5fc91c68e7379.php on line 588 (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\artikel\index.blade.php) at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:983)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(95): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Utama->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}

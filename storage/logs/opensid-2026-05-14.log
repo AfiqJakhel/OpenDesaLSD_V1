@@ -1,0 +1,106 @@
+[2026-05-14 12:26:14] production.WARNING: Client error: `GET http://www.geoplugin.net/json.gp?ip=::1` resulted in a `403 Forbidden` response:
+{
+  "geoplugin_status":403,
+  "geoplugin_message": "geoPlugin API is no longer available for free use. To continue acces (truncated...)
+  
+[2026-05-14 19:08:46] production.WARNING: Client error: `GET http://www.geoplugin.net/json.gp?ip=::1` resulted in a `403 Forbidden` response:
+{
+  "geoplugin_status":403,
+  "geoplugin_message": "geoPlugin API is no longer available for free use. To continue acces (truncated...)
+  
+[2026-05-14 19:23:42] production.ERROR: Client error: `GET https://idm.kemendesa.go.id/open/api/desa/rumusan/1307132002/2026` resulted in a `400 Bad Request` response:
+{"status":400,"error":true,"message":"ID Desa tidak ditemukan"}
+
+[2026-05-14 19:23:58] production.ERROR: Client error: `GET https://idm.kemendesa.go.id/open/api/desa/rumusan/1307132002/2026` resulted in a `400 Bad Request` response:
+{"status":400,"error":true,"message":"ID Desa tidak ditemukan"}
+
+[2026-05-14 19:24:03] production.ERROR: Client error: `GET https://idm.kemendesa.go.id/open/api/desa/rumusan/1307132002/2025` resulted in a `400 Bad Request` response:
+{"status":400,"error":true,"message":"ID Desa tidak ditemukan"}
+
+[2026-05-14 19:24:36] production.ERROR: Client error: `GET https://idm.kemendesa.go.id/open/api/desa/rumusan/1307132002/2025` resulted in a `400 Bad Request` response:
+{"status":400,"error":true,"message":"ID Desa tidak ditemukan"}
+
+[2026-05-14 21:24:26] production.ERROR: Class "App\Models\Peraturan" not found (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\pemerintah\regulasi.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): Class "App\Models\Peraturan" not found (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\pemerintah\regulasi.blade.php) at C:\xampp\htdocs\OpenSID\storage\framework\views\12d0a34737166213cc1ef88fc339e33a.php:79)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Pemerintah.php(59): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Pemerintah->regulasi()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-05-14 21:25:39] production.ERROR: Class "App\Models\Peraturan" not found (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\pemerintah\regulasi.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): Class "App\Models\Peraturan" not found (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\pemerintah\regulasi.blade.php) at C:\xampp\htdocs\OpenSID\storage\framework\views\12d0a34737166213cc1ef88fc339e33a.php:79)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Pemerintah.php(59): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Pemerintah->regulasi()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-05-14 22:25:14] production.ERROR: Class "App\Models\Peraturan" not found (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\pemerintah\regulasi.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): Class "App\Models\Peraturan" not found (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\pemerintah\regulasi.blade.php) at C:\xampp\htdocs\OpenSID\storage\framework\views\12d0a34737166213cc1ef88fc339e33a.php:79)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Pemerintah.php(59): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Pemerintah->regulasi()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-05-14 22:26:13] production.ERROR: Class "App\Models\Peraturan" not found (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\pemerintah\regulasi.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): Class "App\Models\Peraturan" not found (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\pemerintah\regulasi.blade.php) at C:\xampp\htdocs\OpenSID\storage\framework\views\12d0a34737166213cc1ef88fc339e33a.php:79)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Pemerintah.php(59): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Pemerintah->regulasi()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-05-14 23:01:11] production.ERROR: Class "App\Models\Peraturan" not found (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\pemerintah\regulasi.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): Class "App\Models\Peraturan" not found (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\pemerintah\regulasi.blade.php) at C:\xampp\htdocs\OpenSID\storage\framework\views\12d0a34737166213cc1ef88fc339e33a.php:79)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Pemerintah.php(59): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Pemerintah->regulasi()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-05-14 23:35:22] production.ERROR: Class "Str" not found (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\pembangunan\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): Class "Str" not found (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\pembangunan\index.blade.php) at C:\xampp\htdocs\OpenSID\storage\framework\views\0dd2ddc42d1d02896beca5ec340b5d59.php:188)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Pembangunan.php(49): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Pembangunan->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}

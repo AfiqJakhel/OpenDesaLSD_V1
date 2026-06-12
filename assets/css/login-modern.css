@@ -1,0 +1,413 @@
+/* ============================================
+   OpenSID Modern Login Theme
+   Premium glassmorphism login page
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* --- CSS Variables --- */
+:root {
+    --login-primary: #6366f1;
+    --login-primary-hover: #4f46e5;
+    --login-secondary: #8b5cf6;
+    --login-accent: #06b6d4;
+    --login-text: #1e293b;
+    --login-text-light: #64748b;
+    --login-border: rgba(255, 255, 255, 0.2);
+    --login-glass-bg: rgba(255, 255, 255, 0.88);
+    --login-glass-blur: 20px;
+    --login-radius: 24px;
+    --login-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Override base body --- */
+body.login {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    background: #1e1b4b !important;
+    background-image: none !important;
+    color: var(--login-text);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Animated gradient background */
+body.login::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+        radial-gradient(ellipse at 20% 50%, rgba(99, 102, 241, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(139, 92, 246, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at 40% 80%, rgba(6, 182, 212, 0.25) 0%, transparent 50%),
+        linear-gradient(180deg, #1e1b4b 0%, #312e81 40%, #1e1b4b 100%);
+    z-index: 0;
+    animation: gradientShift 15s ease-in-out infinite alternate;
+}
+
+@keyframes gradientShift {
+    0% {
+        background: 
+            radial-gradient(ellipse at 20% 50%, rgba(99, 102, 241, 0.4) 0%, transparent 50%),
+            radial-gradient(ellipse at 80% 20%, rgba(139, 92, 246, 0.3) 0%, transparent 50%),
+            radial-gradient(ellipse at 40% 80%, rgba(6, 182, 212, 0.25) 0%, transparent 50%),
+            linear-gradient(180deg, #1e1b4b 0%, #312e81 40%, #1e1b4b 100%);
+    }
+    100% {
+        background: 
+            radial-gradient(ellipse at 60% 30%, rgba(99, 102, 241, 0.4) 0%, transparent 50%),
+            radial-gradient(ellipse at 20% 70%, rgba(139, 92, 246, 0.3) 0%, transparent 50%),
+            radial-gradient(ellipse at 80% 60%, rgba(6, 182, 212, 0.25) 0%, transparent 50%),
+            linear-gradient(180deg, #1e1b4b 0%, #312e81 40%, #1e1b4b 100%);
+    }
+}
+
+/* Floating particles effect */
+body.login::after {
+    content: '';
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.08);
+    top: -100px;
+    right: -100px;
+    z-index: 0;
+    animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(-30px, 30px) scale(1.1); }
+    66% { transform: translate(20px, -20px) scale(0.9); }
+}
+
+/* --- Container --- */
+.top-content {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-bg {
+    padding: 20px 0 !important;
+    width: 100%;
+}
+
+.form-box {
+    margin-top: 0 !important;
+}
+
+/* --- Glass Card --- */
+.form-top {
+    background: var(--login-glass-bg) !important;
+    backdrop-filter: blur(var(--login-glass-blur)) !important;
+    -webkit-backdrop-filter: blur(var(--login-glass-blur)) !important;
+    border: 1px solid var(--login-border) !important;
+    border-radius: var(--login-radius) var(--login-radius) 0 0 !important;
+    padding: 40px 32px 20px !important;
+    box-shadow: var(--login-shadow);
+}
+
+.form-bottom {
+    background: var(--login-glass-bg) !important;
+    backdrop-filter: blur(var(--login-glass-blur)) !important;
+    -webkit-backdrop-filter: blur(var(--login-glass-blur)) !important;
+    border: 1px solid var(--login-border) !important;
+    border-top: none !important;
+    border-radius: 0 0 var(--login-radius) var(--login-radius) !important;
+    padding: 8px 32px 32px !important;
+    box-shadow: var(--login-shadow);
+}
+
+/* --- Logo --- */
+.form-top img.img-responsive {
+    width: 80px !important;
+    height: 80px !important;
+    object-fit: contain;
+    margin: 0 auto 16px !important;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+    animation: logoFadeIn 0.6s ease-out;
+}
+
+@keyframes logoFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* --- Login Header Text --- */
+.login-footer-top {
+    font-size: 13px !important;
+    color: var(--login-text-light) !important;
+}
+
+.login-footer-top > h1 {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 800 !important;
+    color: var(--login-text) !important;
+    text-transform: uppercase;
+    text-shadow: none !important;
+    -webkit-text-stroke: 0 !important;
+    margin: 8px 0 4px !important;
+    letter-spacing: -0.3px;
+    background: linear-gradient(135deg, #1e1b4b, #6366f1) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    line-height: 1.3 !important;
+}
+
+.login-footer-top > h3 {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 11px !important;
+    color: var(--login-text-light) !important;
+    line-height: 1.6 !important;
+    margin-top: 4px !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+}
+
+/* --- Form Inputs --- */
+.form-bottom input[type="text"],
+.form-bottom input[type="password"],
+.form-bottom input.form-control {
+    height: 48px !important;
+    background: rgba(248, 250, 252, 0.9) !important;
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 14px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: var(--login-text) !important;
+    padding: 0 20px !important;
+    text-align: left !important;
+    line-height: 48px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.form-bottom input[type="text"]::placeholder,
+.form-bottom input[type="password"]::placeholder {
+    color: #94a3b8 !important;
+    font-weight: 400 !important;
+}
+
+.form-bottom input[type="text"]:focus,
+.form-bottom input[type="password"]:focus {
+    border-color: var(--login-primary) !important;
+    background: white !important;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12) !important;
+    outline: none !important;
+}
+
+/* --- Captcha Input --- */
+.captcha input.form-control {
+    text-align: center !important;
+    letter-spacing: 3px;
+    font-weight: 600 !important;
+}
+
+/* --- Captcha Image --- */
+#captcha {
+    border-radius: 12px !important;
+    border: 2px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: all 0.2s ease !important;
+}
+
+#captcha:hover {
+    border-color: var(--login-primary);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+}
+
+/* --- Checkbox & forgot link --- */
+.form-bottom .form-group label {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    color: var(--login-text-light) !important;
+}
+
+.form-bottom .form-group .btn[role="button"],
+.form-bottom a.btn {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: var(--login-primary) !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    height: auto !important;
+    line-height: 1.5 !important;
+}
+
+.form-bottom .form-group .btn[role="button"]:hover,
+.form-bottom a.btn:hover {
+    color: var(--login-primary-hover) !important;
+    text-decoration: underline !important;
+    opacity: 1 !important;
+}
+
+/* --- Submit Button --- */
+.form-bottom button.btn[type="submit"] {
+    font-family: 'Inter', sans-serif !important;
+    width: 100% !important;
+    height: 48px !important;
+    background: linear-gradient(135deg, var(--login-primary), var(--login-secondary)) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 14px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.35) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-bottom button.btn[type="submit"]::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.form-bottom button.btn[type="submit"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.4) !important;
+    opacity: 1 !important;
+}
+
+.form-bottom button.btn[type="submit"]:hover::before {
+    opacity: 1;
+}
+
+.form-bottom button.btn[type="submit"]:active {
+    transform: translateY(0) !important;
+}
+
+.form-bottom button.btn[type="submit"]:focus {
+    background: linear-gradient(135deg, var(--login-primary), var(--login-secondary)) !important;
+    opacity: 1 !important;
+}
+
+/* --- Alert Styles --- */
+.form-top .alert {
+    background: rgba(239, 68, 68, 0.08) !important;
+    border: 1px solid rgba(239, 68, 68, 0.2) !important;
+    border-radius: 12px !important;
+    color: #dc2626 !important;
+    padding: 12px 16px !important;
+    font-size: 12px !important;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.form-top .alert p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* --- Footer Bottom --- */
+.login-footer-bottom {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 11px !important;
+    color: #94a3b8 !important;
+    margin-top: 8px;
+}
+
+.login-footer-bottom a {
+    color: var(--login-primary) !important;
+    font-weight: 600;
+}
+
+.form-bottom hr {
+    border-color: #e2e8f0 !important;
+    margin: 16px 0 8px !important;
+}
+
+/* --- Validation Error --- */
+.form-bottom .error,
+.error {
+    color: #ef4444 !important;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    padding-top: 4px !important;
+}
+
+/* --- Google reCAPTCHA --- */
+.g-recaptcha {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+    transform: scale(0.95);
+    transform-origin: center;
+}
+
+/* --- Entrance Animation --- */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-box {
+    animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.form-bottom .form-group:nth-child(1) { animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both; }
+.form-bottom .form-group:nth-child(2) { animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both; }
+.form-bottom .form-group:nth-child(3) { animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both; }
+.form-bottom .form-group:nth-child(4) { animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both; }
+
+/* --- Responsive --- */
+@media (max-width: 767px) {
+    .inner-bg {
+        padding: 16px 12px !important;
+    }
+    
+    .form-top {
+        padding: 28px 20px 16px !important;
+    }
+    
+    .form-bottom {
+        padding: 4px 20px 24px !important;
+    }
+    
+    .login-footer-top > h1 {
+        font-size: 18px !important;
+    }
+    
+    .col-sm-4.col-sm-offset-4 {
+        width: 100% !important;
+        margin: 0 !important;
+        float: none !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-sm-4.col-sm-offset-4.form-box {
+        width: 380px;
+    }
+}

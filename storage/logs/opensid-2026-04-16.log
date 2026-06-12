@@ -1,0 +1,229 @@
+[2026-04-16 18:41:08] production.WARNING: Client error: `GET http://www.geoplugin.net/json.gp?ip=::1` resulted in a `403 Forbidden` response:
+{
+  "geoplugin_status":403,
+  "geoplugin_message": "geoPlugin API is no longer available for free use. To continue acces (truncated...)
+  
+[2026-04-16 15:02:13] production.ERROR: syntax error, unexpected token "case" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token "case" at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:1575)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(1339): CI_Loader->helper()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(158): CI_Loader->_ci_autoloader()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Controller.php(87): CI_Loader->initialize()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\core\MY_Controller.php(114): CI_Controller->__construct()
+#4 C:\xampp\htdocs\OpenSID\donjo-app\core\Web_Controller.php(68): MY_Controller->__construct()
+#5 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\InformasiPublik.php(79): Web_Controller->__construct()
+#6 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(519): InformasiPublik->__construct()
+#7 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#8 {main}
+"}
+[2026-04-16 15:02:14] production.ERROR: syntax error, unexpected token "case" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token "case" at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:1575)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(1339): CI_Loader->helper()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(158): CI_Loader->_ci_autoloader()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Controller.php(87): CI_Loader->initialize()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\core\MY_Controller.php(114): CI_Controller->__construct()
+#4 C:\xampp\htdocs\OpenSID\donjo-app\core\Web_Controller.php(68): MY_Controller->__construct()
+#5 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\InformasiPublik.php(79): Web_Controller->__construct()
+#6 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(519): InformasiPublik->__construct()
+#7 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#8 {main}
+"}
+[2026-04-16 15:02:15] production.ERROR: syntax error, unexpected token "case" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token "case" at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:1575)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(1339): CI_Loader->helper()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(158): CI_Loader->_ci_autoloader()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Controller.php(87): CI_Loader->initialize()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\core\MY_Controller.php(114): CI_Controller->__construct()
+#4 C:\xampp\htdocs\OpenSID\donjo-app\core\Web_Controller.php(68): MY_Controller->__construct()
+#5 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\InformasiPublik.php(79): Web_Controller->__construct()
+#6 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(519): InformasiPublik->__construct()
+#7 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#8 {main}
+"}
+[2026-04-16 15:02:17] production.ERROR: syntax error, unexpected token "case" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token "case" at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:1575)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(1339): CI_Loader->helper()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(158): CI_Loader->_ci_autoloader()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Controller.php(87): CI_Loader->initialize()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\core\MY_Controller.php(114): CI_Controller->__construct()
+#4 C:\xampp\htdocs\OpenSID\donjo-app\core\Web_Controller.php(68): MY_Controller->__construct()
+#5 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Profil_desa.php(9): Web_Controller->__construct()
+#6 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(519): Profil_desa->__construct()
+#7 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#8 {main}
+"}
+[2026-04-16 15:02:43] production.ERROR: syntax error, unexpected token "case" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token "case" at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:1575)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(1339): CI_Loader->helper()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(158): CI_Loader->_ci_autoloader()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Controller.php(87): CI_Loader->initialize()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\core\MY_Controller.php(114): CI_Controller->__construct()
+#4 C:\xampp\htdocs\OpenSID\donjo-app\core\Web_Controller.php(68): MY_Controller->__construct()
+#5 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Profil_desa.php(9): Web_Controller->__construct()
+#6 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(519): Profil_desa->__construct()
+#7 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#8 {main}
+"}
+[2026-04-16 15:02:45] production.ERROR: syntax error, unexpected token "case" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token "case" at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:1575)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(1339): CI_Loader->helper()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(158): CI_Loader->_ci_autoloader()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Controller.php(87): CI_Loader->initialize()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\core\MY_Controller.php(114): CI_Controller->__construct()
+#4 C:\xampp\htdocs\OpenSID\donjo-app\core\Web_Controller.php(68): MY_Controller->__construct()
+#5 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Kesehatan.php(53): Web_Controller->__construct()
+#6 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(519): Kesehatan->__construct()
+#7 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#8 {main}
+"}
+[2026-04-16 15:02:46] production.ERROR: syntax error, unexpected token "case" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token "case" at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:1575)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(1339): CI_Loader->helper()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(158): CI_Loader->_ci_autoloader()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Controller.php(87): CI_Loader->initialize()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\core\MY_Controller.php(114): CI_Controller->__construct()
+#4 C:\xampp\htdocs\OpenSID\donjo-app\core\Web_Controller.php(68): MY_Controller->__construct()
+#5 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Statistik.php(52): Web_Controller->__construct()
+#6 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(519): Statistik->__construct()
+#7 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#8 {main}
+"}
+[2026-04-16 15:02:48] production.ERROR: syntax error, unexpected token "case" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token "case" at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:1575)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(1339): CI_Loader->helper()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(158): CI_Loader->_ci_autoloader()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Controller.php(87): CI_Loader->initialize()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\core\MY_Controller.php(114): CI_Controller->__construct()
+#4 C:\xampp\htdocs\OpenSID\donjo-app\core\Web_Controller.php(68): MY_Controller->__construct()
+#5 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Pembangunan.php(44): Web_Controller->__construct()
+#6 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(519): Pembangunan->__construct()
+#7 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#8 {main}
+"}
+[2026-04-16 15:02:48] production.ERROR: syntax error, unexpected token "case" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token "case" at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:1575)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(1339): CI_Loader->helper()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(158): CI_Loader->_ci_autoloader()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Controller.php(87): CI_Loader->initialize()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\core\MY_Controller.php(114): CI_Controller->__construct()
+#4 C:\xampp\htdocs\OpenSID\donjo-app\core\Web_Controller.php(68): MY_Controller->__construct()
+#5 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Pemerintah.php(44): Web_Controller->__construct()
+#6 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(519): Pemerintah->__construct()
+#7 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#8 {main}
+"}
+[2026-04-16 15:02:49] production.ERROR: syntax error, unexpected token "case" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token "case" at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:1575)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(1339): CI_Loader->helper()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(158): CI_Loader->_ci_autoloader()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Controller.php(87): CI_Loader->initialize()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\core\MY_Controller.php(114): CI_Controller->__construct()
+#4 C:\xampp\htdocs\OpenSID\donjo-app\core\Web_Controller.php(68): MY_Controller->__construct()
+#5 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Statistik.php(52): Web_Controller->__construct()
+#6 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(519): Statistik->__construct()
+#7 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#8 {main}
+"}
+[2026-04-16 15:02:52] production.ERROR: syntax error, unexpected token "case" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token "case" at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:1575)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(1339): CI_Loader->helper()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(158): CI_Loader->_ci_autoloader()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Controller.php(87): CI_Loader->initialize()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\core\MY_Controller.php(114): CI_Controller->__construct()
+#4 C:\xampp\htdocs\OpenSID\donjo-app\core\Web_Controller.php(68): MY_Controller->__construct()
+#5 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(51): Web_Controller->__construct()
+#6 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(519): Utama->__construct()
+#7 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#8 {main}
+"}
+[2026-04-16 15:02:54] production.ERROR: syntax error, unexpected token "case" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token "case" at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:1575)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(1339): CI_Loader->helper()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(158): CI_Loader->_ci_autoloader()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Controller.php(87): CI_Loader->initialize()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\core\MY_Controller.php(114): CI_Controller->__construct()
+#4 C:\xampp\htdocs\OpenSID\donjo-app\core\Web_Controller.php(68): MY_Controller->__construct()
+#5 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(51): Web_Controller->__construct()
+#6 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(519): Utama->__construct()
+#7 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#8 {main}
+"}
+[2026-04-16 15:03:08] production.ERROR: syntax error, unexpected token "case" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token "case" at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:1575)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(1339): CI_Loader->helper()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(158): CI_Loader->_ci_autoloader()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Controller.php(87): CI_Loader->initialize()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\core\MY_Controller.php(114): CI_Controller->__construct()
+#4 C:\xampp\htdocs\OpenSID\donjo-app\core\Web_Controller.php(68): MY_Controller->__construct()
+#5 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(51): Web_Controller->__construct()
+#6 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(519): Utama->__construct()
+#7 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#8 {main}
+"}
+[2026-04-16 15:03:10] production.ERROR: syntax error, unexpected token "case" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token "case" at C:\xampp\htdocs\OpenSID\donjo-app\helpers\opensid_helper.php:1575)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(1339): CI_Loader->helper()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Loader.php(158): CI_Loader->_ci_autoloader()
+#2 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\Controller.php(87): CI_Loader->initialize()
+#3 C:\xampp\htdocs\OpenSID\donjo-app\core\MY_Controller.php(114): CI_Controller->__construct()
+#4 C:\xampp\htdocs\OpenSID\donjo-app\core\Web_Controller.php(68): MY_Controller->__construct()
+#5 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Utama.php(51): Web_Controller->__construct()
+#6 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(519): Utama->__construct()
+#7 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#8 {main}
+"}
+[2026-04-16 20:18:35] production.ERROR: The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist {"exception":"[object] (Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException(code: 0): The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist at C:\xampp\htdocs\OpenSID\vendor\symfony\http-foundation\File\File.php:36)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\donjo-app\controllers\Asset.php(47): Symfony\Component\HttpFoundation\File\File->__construct()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Asset->serveTheme()
+#2 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#3 {main}
+"}
+[2026-04-16 20:18:39] production.ERROR: The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist {"exception":"[object] (Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException(code: 0): The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist at C:\xampp\htdocs\OpenSID\vendor\symfony\http-foundation\File\File.php:36)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\donjo-app\controllers\Asset.php(47): Symfony\Component\HttpFoundation\File\File->__construct()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Asset->serveTheme()
+#2 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#3 {main}
+"}
+[2026-04-16 20:18:42] production.ERROR: The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist {"exception":"[object] (Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException(code: 0): The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist at C:\xampp\htdocs\OpenSID\vendor\symfony\http-foundation\File\File.php:36)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\donjo-app\controllers\Asset.php(47): Symfony\Component\HttpFoundation\File\File->__construct()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Asset->serveTheme()
+#2 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#3 {main}
+"}
+[2026-04-16 20:18:57] production.ERROR: The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist {"exception":"[object] (Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException(code: 0): The file "C:\xampp\htdocs\OpenSID\storage/app/themes/esensi/assets/" does not exist at C:\xampp\htdocs\OpenSID\vendor\symfony\http-foundation\File\File.php:36)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\donjo-app\controllers\Asset.php(47): Symfony\Component\HttpFoundation\File\File->__construct()
+#1 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Asset->serveTheme()
+#2 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#3 {main}
+"}
+[2026-04-16 20:53:05] production.ERROR: Missing "tahun" parameter for "api.idm" route (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\idm\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): Missing "tahun" parameter for "api.idm" route (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\idm\index.blade.php) at C:\xampp\htdocs\OpenSID\vendor\opensid\router\src\Route.php:402)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Idm.php(48): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Idm->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
+[2026-04-16 20:53:07] production.ERROR: Missing "tahun" parameter for "api.idm" route (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\idm\index.blade.php) {"exception":"[object] (Illuminate\View\ViewException(code: 0): Missing "tahun" parameter for "api.idm" route (View: C:\xampp\htdocs\OpenSID\storage\app\themes\esensi\resources\views\partials\idm\index.blade.php) at C:\xampp\htdocs\OpenSID\vendor\opensid\router\src\Route.php:402)
+[stacktrace]
+#0 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\Engines\CompilerEngine.php(72): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(207): Illuminate\View\Engines\CompilerEngine->get()
+#3 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(190): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(159): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\OpenSID\vendor\illuminate\view\View.php(504): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\OpenSID\donjo-app\helpers\illuminate_helper.php(664): Illuminate\View\View->__toString()
+#7 C:\xampp\htdocs\OpenSID\donjo-app\controllers\fweb\Idm.php(48): view()
+#8 C:\xampp\htdocs\OpenSID\vendor\codeigniter\framework\system\core\CodeIgniter.php(533): Idm->index()
+#9 C:\xampp\htdocs\OpenSID\index.php(284): require_once()
+#10 {main}
+"}
