@@ -1,6 +1,4 @@
-@extends('theme::layouts.full-content')
-
-@push('styles')
+<?php $__env->startPush('styles'); ?>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* ─── Base ─── */
@@ -82,28 +80,28 @@
     #print-root .no-print { display:none !important; }
 }
 </style>
-@endpush
+<?php $__env->stopPush(); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 
-{{-- ══ HIDDEN PRINT ROOT (muncul saat print) ══ --}}
+
 <div id="print-root" style="display:none;">
     <div class="print-header">
         <h1>Struktur Organisasi Pemerintah Nagari</h1>
         <p>Koto Tangah Batu Ampa · Kecamatan Akabiluru · Kabupaten Lima Puluh Kota · Provinsi Sumatera Barat</p>
     </div>
-    {{-- Chart akan di-inject JS dari #sotk-chart-inner --}}
+    
     <div id="print-chart-target"></div>
 </div>
 
-{{-- HERO --}}
+
 <section class="relative bg-[#0D2247] text-white overflow-hidden" style="min-height:180px;">
     <div class="absolute inset-0 opacity-10" style="background:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400') center/cover;"></div>
     <div class="container mx-auto px-4 max-w-7xl py-14 relative z-10 font-jakarta">
         <nav class="text-white/50 text-xs mb-3 flex items-center gap-2">
-            <a href="{{ site_url('/') }}" class="hover:text-white transition">Beranda</a>
+            <a href="<?php echo e(site_url('/')); ?>" class="hover:text-white transition">Beranda</a>
             <i class="fas fa-chevron-right text-[8px]"></i>
-            <a href="{{ site_url('pemerintah') }}" class="hover:text-white transition">Pemerintahan</a>
+            <a href="<?php echo e(site_url('pemerintah')); ?>" class="hover:text-white transition">Pemerintahan</a>
             <i class="fas fa-chevron-right text-[8px]"></i>
             <span class="text-white font-semibold">Struktur Organisasi</span>
         </nav>
@@ -118,15 +116,15 @@
     </div>
 </section>
 
-{{-- TAB NAV --}}
+
 <div class="bg-white shadow-sm sticky top-[96px] z-40 border-b border-gray-100 font-jakarta no-print">
     <div class="container mx-auto px-4 max-w-7xl overflow-x-auto scrollbar-none">
         <div class="flex">
-            <a href="{{ site_url('pemerintah') }}" style="display:inline-flex;align-items:center;gap:.45rem;padding:.7rem 1.4rem;font-size:.8rem;font-weight:600;color:#6b7280;border-bottom:3px solid transparent;white-space:nowrap;text-decoration:none;"><i class="fas fa-users text-[10px]"></i> Aparatur Nagari</a>
-            <a href="{{ site_url('struktur-organisasi-dan-tata-kerja') }}" style="display:inline-flex;align-items:center;gap:.45rem;padding:.7rem 1.4rem;font-size:.8rem;font-weight:700;color:#0D2247;border-bottom:3px solid #c8973a;white-space:nowrap;text-decoration:none;"><i class="fas fa-sitemap text-[10px]"></i> Struktur Organisasi</a>
-            <a href="{{ site_url('pemerintah/tugas-fungsi') }}" style="display:inline-flex;align-items:center;gap:.45rem;padding:.7rem 1.4rem;font-size:.8rem;font-weight:600;color:#6b7280;border-bottom:3px solid transparent;white-space:nowrap;text-decoration:none;"><i class="fas fa-tasks text-[10px]"></i> Tugas &amp; Fungsi</a>
-            <a href="{{ site_url('pemerintah/regulasi') }}" style="display:inline-flex;align-items:center;gap:.45rem;padding:.7rem 1.4rem;font-size:.8rem;font-weight:600;color:#6b7280;border-bottom:3px solid transparent;white-space:nowrap;text-decoration:none;"><i class="fas fa-gavel text-[10px]"></i> Regulasi</a>
-            <a href="{{ site_url('pemerintah/transparansi') }}" style="display:inline-flex;align-items:center;gap:.45rem;padding:.7rem 1.4rem;font-size:.8rem;font-weight:600;color:#6b7280;border-bottom:3px solid transparent;white-space:nowrap;text-decoration:none;"><i class="fas fa-chart-pie text-[10px]"></i> Transparansi</a>
+            <a href="<?php echo e(site_url('pemerintah')); ?>" style="display:inline-flex;align-items:center;gap:.45rem;padding:.7rem 1.4rem;font-size:.8rem;font-weight:600;color:#6b7280;border-bottom:3px solid transparent;white-space:nowrap;text-decoration:none;"><i class="fas fa-users text-[10px]"></i> Aparatur Nagari</a>
+            <a href="<?php echo e(site_url('struktur-organisasi-dan-tata-kerja')); ?>" style="display:inline-flex;align-items:center;gap:.45rem;padding:.7rem 1.4rem;font-size:.8rem;font-weight:700;color:#0D2247;border-bottom:3px solid #c8973a;white-space:nowrap;text-decoration:none;"><i class="fas fa-sitemap text-[10px]"></i> Struktur Organisasi</a>
+            <a href="<?php echo e(site_url('pemerintah/tugas-fungsi')); ?>" style="display:inline-flex;align-items:center;gap:.45rem;padding:.7rem 1.4rem;font-size:.8rem;font-weight:600;color:#6b7280;border-bottom:3px solid transparent;white-space:nowrap;text-decoration:none;"><i class="fas fa-tasks text-[10px]"></i> Tugas &amp; Fungsi</a>
+            <a href="<?php echo e(site_url('pemerintah/regulasi')); ?>" style="display:inline-flex;align-items:center;gap:.45rem;padding:.7rem 1.4rem;font-size:.8rem;font-weight:600;color:#6b7280;border-bottom:3px solid transparent;white-space:nowrap;text-decoration:none;"><i class="fas fa-gavel text-[10px]"></i> Regulasi</a>
+            <a href="<?php echo e(site_url('pemerintah/transparansi')); ?>" style="display:inline-flex;align-items:center;gap:.45rem;padding:.7rem 1.4rem;font-size:.8rem;font-weight:600;color:#6b7280;border-bottom:3px solid transparent;white-space:nowrap;text-decoration:none;"><i class="fas fa-chart-pie text-[10px]"></i> Transparansi</a>
         </div>
     </div>
 </div>
@@ -134,14 +132,14 @@
 <div class="bg-gray-50 min-h-screen py-12">
 <div class="container mx-auto px-4 max-w-7xl font-jakarta">
     
-    {{-- ═══════════ ORG CHART ═══════════ --}}
+    
     <div class="org-wrap bg-white rounded-3xl shadow-lg border border-gray-100 p-6 text-center">
     <div id="sotk-chart-inner">
         <!-- GAMBAR SOTK DARI USER -->
-        <img src="{{ base_url('assets/images/sotk-nagari.png') }}" alt="Struktur Organisasi Nagari" class="mx-auto w-full max-w-5xl rounded-xl shadow-sm border border-gray-200">
+        <img src="<?php echo e(base_url('assets/images/sotk-nagari.png')); ?>" alt="Struktur Organisasi Nagari" class="mx-auto w-full max-w-5xl rounded-xl shadow-sm border border-gray-200">
     </div>
 
-    {{-- Tombol bawah --}}
+    
     <div class="text-center mt-8 no-print">
         <button onclick="printSOTK()" class="inline-flex items-center gap-2 bg-[#0D2247] text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-[#162e5c] transition shadow-md">
             <i class="fas fa-print"></i> Cetak Struktur Organisasi
@@ -152,9 +150,9 @@
 </div>
 </div>
 
-@endsection
+<?php $__env->stopSection(); ?>
 
-@push('scripts')
+<?php $__env->startPush('scripts'); ?>
 <script>
 function printSOTK() {
     // Ambil konten chart
@@ -165,7 +163,7 @@ function printSOTK() {
         /src="([^"]+)"/g,
         function(_, src){ 
             if(src.startsWith('http')) return 'src="' + src + '"';
-            return 'src="{{ base_url() }}' + src.replace(/^\/+/, '') + '"'; 
+            return 'src="<?php echo e(base_url()); ?>' + src.replace(/^\/+/, '') + '"'; 
         }
     );
 
@@ -226,4 +224,6 @@ img { max-width: 100%; max-height: 135mm; width: auto; height: auto; object-fit:
     w.document.close();
 }
 </script>
-@endpush
+<?php $__env->stopPush(); ?>
+
+<?php echo $__env->make('theme::layouts.full-content', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\OpenSID\/storage/app/themes/esensi/resources/views/partials/sotk/index.blade.php ENDPATH**/ ?>
