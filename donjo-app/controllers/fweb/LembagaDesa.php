@@ -48,7 +48,7 @@ class LembagaDesa extends Web_Controller
 
     public function index()
     {
-        $data['lembaga'] = Kelompok::tipe('lembaga')
+        $data['lembaga'] = Kelompok::tipe('kelompok')
             ->with(['kelompokMaster', 'ketua'])
             ->status(1)
             ->get();

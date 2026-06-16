@@ -9,7 +9,7 @@
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('breadcrumb'); ?>
-    <li><a href="#" onclick="window.history.back()"> Daftar
+    <li><a href="<?php echo e(ci_route('dokumen')); ?>"> Daftar
             <?php echo e($kat_nama); ?>
 
         </a></li>
@@ -28,7 +28,7 @@
         <div class="box-header with-border">
             <?php if (isset($component)) { $__componentOriginalc11c7292aaa9235aebed7379ae351e6a = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginalc11c7292aaa9235aebed7379ae351e6a = $attributes; } ?>
-<?php $component = App\View\Components\KembaliButton::resolve(['judul' => 'Kembali ke Daftar '.e($kat_nama).' Di '.e(ucwords(setting('sebutan_desa'))).'','url' => '#','onclick' => 'window.history.back()'] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
+<?php $component = App\View\Components\KembaliButton::resolve(['judul' => 'Kembali ke Daftar '.e($kat_nama).' Di '.e(ucwords(setting('sebutan_desa'))).'','url' => 'dokumen'] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('kembali-button'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>

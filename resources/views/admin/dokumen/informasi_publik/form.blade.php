@@ -9,7 +9,7 @@
 @endsection
 
 @section('breadcrumb')
-    <li><a href="#" onclick="window.history.back()"> Daftar
+    <li><a href="{{ ci_route('dokumen') }}"> Daftar
             {{ $kat_nama }}
         </a></li>
     <li class="active">Pengaturan
@@ -23,7 +23,7 @@
     <div class="box box-info">
         {!! form_open_multipart($form_action, 'class="form-horizontal" id="validasi"') !!}
         <div class="box-header with-border">
-            <x-kembali-button judul="Kembali ke Daftar {{ $kat_nama }} Di {{ ucwords(setting('sebutan_desa')) }}" url="#" onclick="window.history.back()" />
+            <x-kembali-button judul="Kembali ke Daftar {{ $kat_nama }} Di {{ ucwords(setting('sebutan_desa')) }}" url="dokumen" />
 
         </div>
         <div class="box-body">

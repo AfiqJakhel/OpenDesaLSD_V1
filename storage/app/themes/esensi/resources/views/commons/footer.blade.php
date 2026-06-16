@@ -22,7 +22,7 @@
             <div class="space-y-6">
                 <a href="{{ site_url('/') }}" class="inline-flex items-center gap-4 group">
                     <div class="w-14 h-14 bg-white/10 rounded-2xl p-2 group-hover:bg-white/15 transition-all duration-300 flex items-center justify-center">
-                        <img src="{{ gambar_desa($desa['logo']) }}" alt="Logo" class="w-full h-full object-contain brightness-0 invert">
+                        <img src="{{ gambar_desa($desa['logo']) }}" alt="Logo" class="w-full h-full object-contain">
                     </div>
                     <div>
                         <h2 class="text-white font-bold text-lg uppercase tracking-tight leading-tight">{{ setting('sebutan_desa') }} {{ $desa['nama_desa'] }}</h2>
@@ -52,7 +52,7 @@
                         <a href="{{ site_url('pemerintahan') }}" class="text-xs text-white/60 hover:text-accent transition flex items-center gap-2">
                             <i class="fas fa-chevron-right text-[8px]"></i> Pemerintahan
                         </a>
-                        <a href="{{ site_url('layanan-mandiri') }}" class="text-xs text-white/60 hover:text-accent transition flex items-center gap-2">
+                        <a href="{{ site_url('layanan-mandiri') }}" class="hidden text-xs text-white/60 hover:text-accent transition flex items-center gap-2">
                             <i class="fas fa-chevron-right text-[8px]"></i> Layanan Mandiri
                         </a>
                         <a href="{{ site_url('berita') }}" class="text-xs text-white/60 hover:text-accent transition flex items-center gap-2">

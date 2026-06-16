@@ -54,7 +54,7 @@
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="single_footer_top wow fadeInRight">
                     @if (setting('tte'))
-                        <img src="{{ asset('assets/images/bsre.png?v', false) }}" alt="Bsre" class="img-responsive" style="width: 185px;" />
+                        <img src="{{ base_url('assets/images/bsre.png') }}" alt="Bsre" class="img-responsive" style="width: 185px;" />
                     @endif
                     @foreach ($sosmed as $data)
                         @if (!empty($data['link']))

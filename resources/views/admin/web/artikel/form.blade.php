@@ -148,9 +148,9 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar-check-o"></i>
                                     </div>
-                                    <input class="form-control input-sm pull-right tgl_jam" name="tgl_agenda" type="text" value="{{ $artikel['agenda']['tgl_agenda'] }}">
+                                    <input class="form-control input-sm pull-right tgl_jam" name="tgl_agenda" type="text" value="{{ $artikel['agenda']['tgl_agenda'] }}" autocomplete="off" placeholder="Contoh: 31-12-2026 09:30:00">
                                 </div>
-                                <span class="help-block"><code>(Isikan Tanggal Kegiatan)</code></span>
+                                <span class="help-block"><code>(Format: Hari-Bulan-Tahun Jam:Menit:Detik)</code></span>
                                 <label class="control-label" for="lokasi_kegiatan">Lokasi Kegiatan</label>
                                 <div class="input-group input-group-sm">
                                     <div class="input-group-addon">
@@ -233,7 +233,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-calendar"></i>
                                 </div>
-                                <input class="form-control input-sm pull-right tgl_jam" name="tgl_upload" type="text" value="{{ $artikel['tgl_upload'] }}">
+                                <input class="form-control input-sm pull-right tgl_jam" name="tgl_upload" type="text" value="{{ $artikel['tgl_upload'] }}" autocomplete="off">
                             </div>
                             <span class="help-block"><code>(Kosongkan jika ingin langsung di post, bisa digunakan untuk artikel terjadwal)</code></span>
                         </div>

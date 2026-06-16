@@ -2,6 +2,7 @@
 
 @section('content')
     <form id="validasi" autocomplete="off" action="{{ $form_action }}" method="post" class="space-y-5">
+        <input type="hidden" name="{{ $token_name }}" value="{{ $token_value }}">
         <!-- NIK Input -->
         <div>
             <label for="nik" class="block text-sm font-semibold text-gray-700 mb-2">Nomor Induk Kependudukan (NIK)</label>

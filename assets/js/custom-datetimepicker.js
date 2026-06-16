@@ -70,10 +70,15 @@ $(document).ready(function()
 		$('#tgljam_akhir').data('DateTimePicker').date(tglAkhir);
 	});
 
-	$('.tgl_jam').datetimepicker(
-	{
-		format: 'DD-MM-YYYY HH:mm:ss',
-		locale:'id'
+	$('.tgl_jam').each(function() {
+		var target = $(this).closest('.date').length ? $(this).closest('.date') : $(this);
+		target.datetimepicker(
+		{
+			format: 'DD-MM-YYYY HH:mm:ss',
+			useCurrent: false,
+			allowInputToggle: true,
+			locale:'id'
+		});
 	});
 	$('.tgl').datetimepicker(
 	{

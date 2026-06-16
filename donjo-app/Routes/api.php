@@ -70,6 +70,8 @@ Route::group('internal_api', ['namespace' => 'internal_api'], static function ()
     Route::get('inventaris-jalan', 'InventarisJalan@index')->name('api.inventaris-jalan');
     Route::get('inventaris-peralatan', 'InventarisPeralatan@index')->name('api.inventaris-peralatan');
     Route::get('inventaris-kontruksi', 'InventarisKontruksi@index')->name('api.inventaris-kontruksi');
+    Route::get('buku-inventaris-kekayaan', 'BukuInventarisKekayaan@index');
+    Route::get('buku-tanah-kas-desa', 'BukuTanahKasDesa@index');
 
     // Stunting
     Route::get('stunting', 'Stunting@index')->name('api.stunting');

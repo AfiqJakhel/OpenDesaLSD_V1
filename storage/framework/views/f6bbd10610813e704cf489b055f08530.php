@@ -339,13 +339,10 @@ $(document).ready(function() {
                                 </div>
                             </div>
                         </div>
-                        <div class="p-4 border-t border-gray-50 flex gap-2">
-                            <a href="${attr.pesan_wa}" target="_blank" class="flex-1 bg-[#0D2247] hover:bg-[#1a3a6e] text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-2">
+                        <div class="p-4 border-t border-gray-50">
+                            <a href="${attr.pesan_wa}" target="_blank" class="w-full bg-[#0D2247] hover:bg-[#1a3a6e] text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-2">
                                 <i class="fab fa-whatsapp text-sm"></i> Beli
                             </a>
-                            <button onclick="viewLokasi(${attr.pelapak?.lat}, ${attr.pelapak?.lng}, ${attr.pelapak?.zoom}, '${pelapakNama.replace(/'/g,"\\'").replace(/"/g,"&quot;")}')" class="w-10 h-10 flex-shrink-0 bg-emerald-50 hover:bg-emerald-100 text-emerald-600 rounded-xl transition flex items-center justify-center" title="Lihat Lokasi">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </button>
                         </div>
                     </div>
                 `;

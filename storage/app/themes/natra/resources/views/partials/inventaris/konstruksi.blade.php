@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="single_page_area">
-        <h2 class="post_titile">Data {{ $judul }}</h2>
+        <div class="single_category wow fadeInDown"><h2><span class="bold_line"><span></span></span> <span class="solid_line"></span> <span class="title_text">Data {{ $judul }}</span></h2></div><div class="single_page_content" style="margin-bottom:10px;">
         <div class="box-body">
             <div class="table-responsive">
                 <table id="inventaris" class="table table-bordered table-hover">
@@ -37,8 +37,7 @@
 
                 </table>
             </div>
-        </div>
-    </div>
+        </div></div></div>
 @endsection
 
 @push('scripts')

@@ -173,7 +173,7 @@ define('PENGGUNAAN_BARANG', serialize([
  */
 function AmbilVersi(): string
 {
-    return VERSION . (PREMIUM ? '-premium' : '');
+    return VERSION . ((defined('PREMIUM') && PREMIUM) ? '-premium' : '');
 }
 
 /**
@@ -221,10 +221,11 @@ function gambar_desa(?string $nama_file = null, $type = false, $file = false): s
 
 function session_error($pesan = ''): void
 {
-    // $_SESSION['error_msg'] = $pesan;
-    // $_SESSION['success']   = -1;
-
-    get_instance()->session->set_userdata([
+    $CI = get_instance();
+    if (!isset($CI->session)) {
+        $CI->load->library('session');
+    }
+    $CI->session->set_userdata([
         'error_msg' => $pesan,
         'success' => -1,
     ]);
@@ -232,12 +233,20 @@ function session_error($pesan = ''): void
 
 function session_error_clear(): void
 {
-    get_instance()->session->unset_userdata(['error_msg', 'success']);
+    $CI = get_instance();
+    if (!isset($CI->session)) {
+        $CI->load->library('session');
+    }
+    $CI->session->unset_userdata(['error_msg', 'success']);
 }
 
 function session_success(): void
 {
-    get_instance()->session->set_userdata([
+    $CI = get_instance();
+    if (!isset($CI->session)) {
+        $CI->load->library('session');
+    }
+    $CI->session->set_userdata([
         'error_msg' => '',
         'success' => 1,
     ]);
@@ -1329,7 +1338,7 @@ function dirSize($directory)
 
 function getSizeDB()
 {
-    $CI = &get_instance();
+    $CI = get_instance();
 
     $query = "SELECT
         TABLE_SCHEMA AS DB_Name,
@@ -2439,7 +2448,7 @@ if (!function_exists('caseReplaceFoto')) {
                 return str_replace($cek2, $ganti_dengan, $matches[0]);
             }
 
-            return $allImg;
+            return $matches[0];
         }, $teks);
     }
 }

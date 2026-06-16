@@ -79,9 +79,7 @@
                         <?php endif; ?>
                     </div>
 
-                    <a href="<?php echo e(site_url('data-lembaga/' . $item->slug)); ?>" class="inline-flex items-center gap-2 text-[#0D2247] font-jakarta font-bold text-sm hover:gap-3 transition-all">
-                        Lihat Detail <i class="fas fa-arrow-right text-xs"></i>
-                    </a>
+                    
                 </div>
             </div>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

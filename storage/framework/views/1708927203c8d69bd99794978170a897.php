@@ -24,7 +24,7 @@
                     <div class="box-header with-border">
                         <?php if (isset($component)) { $__componentOriginalc11c7292aaa9235aebed7379ae351e6a = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginalc11c7292aaa9235aebed7379ae351e6a = $attributes; } ?>
-<?php $component = App\View\Components\KembaliButton::resolve(['judul' => 'Kembali ke Daftar Data Produk','url' => '/lapak_admin/produk'] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
+<?php $component = App\View\Components\KembaliButton::resolve(['judul' => 'Kembali ke Daftar Data Produk','url' => '/lapak_admin/produk' . (request('id_pend') ? '?id_pend=' . request('id_pend') : '')] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('kembali-button'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
@@ -283,7 +283,7 @@
                 }
             }).then((result) => {
                 if (!result.isConfirmed) {
-                    window.location.href = "<?php echo e(site_url('lapak_admin/produk')); ?>";
+                    window.location.href = "<?php echo e(site_url('lapak_admin/produk')); ?>" + "<?php echo request('id_pend') ? '?id_pend=' . request('id_pend') : ''; ?>";
                 }
             });
         });

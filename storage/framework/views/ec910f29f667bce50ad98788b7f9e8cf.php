@@ -1,53 +1,78 @@
 <?php echo $__env->make('theme::commons.asset_highcharts', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php $__env->startSection('content'); ?>
-    <div class="box-header">
-        <div class="p-4">
-            <h1 class="text-h3"><?= $title ?></h1>
-            <form class="form form-horizontal" action="" method="get">
-                <div class="flex space-x-2">
-                    <div class="">
-                        <div class="form-group">
-                            <select name="kuartal" id="kuartal" required class="form-control input-sm" title="Pilih salah satu">
-                                <?php $__currentLoopData = kuartal2(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                    <option value="<?php echo e($item['ke']); ?>" <?= ($item['ke'] == $kuartal) ? 'selected' : ''; ?>>
-                                        Kuartal ke <?php echo e($item['ke']); ?>
+    <!-- Header Section -->
+    <section class="relative bg-[#0D2247] text-white overflow-hidden" style="min-height: 280px;">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1600&q=80'); background-size: cover; background-position: center;"></div>
+        <div class="container mx-auto px-4 max-w-7xl py-16 relative z-10">
+            <nav class="text-white/60 text-sm mb-6 font-jakarta flex items-center gap-2">
+                <a href="<?php echo e(site_url('/')); ?>" class="hover:text-white transition">Beranda</a>
+                <i class="fas fa-chevron-right text-[9px]"></i>
+                <span class="text-white font-semibold">Data Desa</span>
+            </nav>
+            <span class="text-amber-400 font-bold tracking-[0.2em] text-xs uppercase font-jakarta">Kesehatan</span>
+            <h1 class="font-jakarta font-extrabold text-4xl md:text-5xl mt-3 mb-4"><?php echo e($title); ?></h1>
+            <p class="text-white/70 max-w-xl font-jakarta">Pemantauan data perkembangan kesehatan balita dan pencegahan stunting secara berkala.</p>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full" style="display:block">
+                <path d="M0 50 L0 25 Q360 0 720 25 Q1080 50 1440 25 L1440 50 Z" fill="#f9fafb"/>
+            </svg>
+        </div>
+    </section>
 
-                                        (<?php echo e($item['bulan']); ?>)
-                                    </option>
-                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="form-group">
-                            <select name="tahun" id="tahun" class="form-control input-sm" title="Pilih salah satu">
-                                <?php $__currentLoopData = $dataTahun; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                    <option value="<?php echo e($item->tahun); ?>" <?= ($item->tahun == $tahun) ? 'selected' : ''; ?>><?php echo e($item->tahun); ?></option>
-                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="form-group">
-                            <select name="id_posyandu" id="id_posyandu" class="form-control input-sm" title="Pilih salah satu">
-                                <option value="">Semua</option>
-                                <?php $__currentLoopData = $posyandu; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                    <option value="<?php echo e($item->id); ?>" <?= ($item->id == $idPosyandu) ? 'selected' : ''; ?>>
-                                        <?php echo e($item->nama); ?></option>
-                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="submit" class="btn btn-social btn-info btn-sm" id="cari">
-                            <i class="fa fa-search"></i> Cari
-                        </button>
-                    </div>
+    <!-- Filter Section -->
+    <div class="bg-gray-50 min-h-screen pt-8 pb-16">
+        <section class="relative z-20 container mx-auto px-4 max-w-7xl mb-8">
+        <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100">
+            <form action="" method="get" class="flex flex-col md:flex-row items-center gap-4">
+                <div class="w-full md:w-1/3">
+                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Kuartal</label>
+                    <select name="kuartal" id="kuartal" required class="w-full bg-gray-50 border border-gray-200 text-gray-800 text-sm rounded-xl focus:ring-primary focus:border-primary block p-3">
+                        <?php $__currentLoopData = kuartal2(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <option value="<?php echo e($item['ke']); ?>" <?= ($item['ke'] == $kuartal) ? 'selected' : ''; ?>>
+                                Kuartal ke <?php echo e($item['ke']); ?> (<?php echo e($item['bulan']); ?>)
+                            </option>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </select>
+                </div>
+                
+                <div class="w-full md:w-1/4">
+                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Tahun</label>
+                    <select name="tahun" id="tahun" class="w-full bg-gray-50 border border-gray-200 text-gray-800 text-sm rounded-xl focus:ring-primary focus:border-primary block p-3">
+                        <?php $__currentLoopData = $dataTahun; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <option value="<?php echo e($item->tahun); ?>" <?= ($item->tahun == $tahun) ? 'selected' : ''; ?>><?php echo e($item->tahun); ?></option>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </select>
+                </div>
+                
+                <div class="w-full md:w-1/3">
+                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Posyandu</label>
+                    <select name="id_posyandu" id="id_posyandu" class="w-full bg-gray-50 border border-gray-200 text-gray-800 text-sm rounded-xl focus:ring-primary focus:border-primary block p-3">
+                        <option value="">Semua Posyandu</option>
+                        <?php $__currentLoopData = $posyandu; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <option value="<?php echo e($item->id); ?>" <?= ($item->id == $idPosyandu) ? 'selected' : ''; ?>>
+                                <?php echo e($item->nama); ?>
+
+                            </option>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </select>
+                </div>
+                
+                <div class="w-full md:w-auto md:mt-6">
+                    <button type="submit" id="cari" class="w-full md:w-auto bg-[#0D2247] hover:bg-[#1a3a6e] text-white px-8 py-3 rounded-xl text-sm font-bold shadow-lg hover:shadow-xl transition-all active:scale-95 flex items-center justify-center gap-2">
+                        <i class="fas fa-filter"></i> Filter
+                    </button>
                 </div>
             </form>
         </div>
-        <div class="box-body text-sm py-2 space-y-4" id="stunting-list">
-        </div>
+    </section>
+
+        <!-- Data Section -->
+        <section class="container mx-auto px-4 max-w-7xl pb-8">
+            <div id="stunting-list" class="space-y-8">
+                <!-- Loading or Data will be injected here via AJAX -->
+            </div>
+        </section>
     </div>
 <?php $__env->stopSection(); ?>
 

@@ -1,55 +1,86 @@
-@extends('theme::layouts.right-sidebar')
+@extends('theme::layouts.full-content')
 @include('core::admin.layouts.components.asset_numeral')
 
+@push('styles')
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+    .font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .table-modern { width: 100%; border-collapse: separate; border-spacing: 0; }
+    .table-modern th { background-color: #f8fafc; color: #475569; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; padding: 1rem 1.5rem; border-bottom: 2px solid #e2e8f0; }
+    .table-modern td { padding: 1rem 1.5rem; border-bottom: 1px solid #f1f5f9; color: #334155; vertical-align: middle; }
+    .table-modern tr:hover td { background-color: #f8fafc; }
+    .dataTables_wrapper .dataTables_paginate .paginate_button { padding: 0.25rem 0.75rem; margin-left: 0.25rem; border-radius: 0.375rem; border: 1px solid #e2e8f0; background: white; color: #475569 !important; }
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current { background: #0D2247 !important; color: white !important; border-color: #0D2247; }
+    .dataTables_wrapper .dataTables_filter input { border: 1px solid #e2e8f0; border-radius: 0.5rem; padding: 0.5rem 1rem; margin-left: 0.5rem; outline: none; transition: border-color 0.2s; }
+    .dataTables_wrapper .dataTables_filter input:focus { border-color: #0D2247; }
+    .dataTables_wrapper .dataTables_length select { border: 1px solid #e2e8f0; border-radius: 0.5rem; padding: 0.3rem 1.5rem 0.3rem 0.5rem; margin: 0 0.5rem; outline: none; }
+</style>
+@endpush
+
 @section('content')
-    <nav role="navigation" aria-label="navigation" class="breadcrumb">
-        <ol>
-            <li><a href="{{ site_url('inventaris') }}">Inventaris</a></li>
-            <li aria-current="page">{{ $judul }}</li>
-        </ol>
-    </nav>
-    <div class="content py-1">
-        <div class="box box-danger" style="padding-bottom: 2rem;">
-            <div class="box-header with-border" style="margin-bottom: 15px;">
-                <h class="box-title">{{ $judul }}</h>
+{{-- HERO --}}
+<section class="relative bg-[#0D2247] text-white overflow-hidden" style="min-height: 280px;">
+    <div class="absolute inset-0 opacity-10" style="background-image: url('https://images.unsplash.com/photo-1541888087455-163155ab2b4a?w=1600&q=80'); background-size: cover; background-position: center;"></div>
+    <div class="container mx-auto px-4 max-w-7xl py-16 relative z-10">
+        <nav class="text-white/60 text-sm mb-6 font-jakarta flex items-center gap-2">
+            <a href="{{ site_url('/') }}" class="hover:text-white transition">Beranda</a>
+            <i class="fas fa-chevron-right text-[9px]"></i>
+            <a href="{{ site_url('inventaris') }}" class="hover:text-white transition">Inventaris</a>
+            <i class="fas fa-chevron-right text-[9px]"></i>
+            <span class="text-white font-semibold">{{ $judul }}</span>
+        </nav>
+        <span class="text-amber-400 font-bold tracking-[0.2em] text-xs uppercase font-jakarta">Data Aset</span>
+        <h1 class="font-jakarta font-extrabold text-4xl md:text-5xl mt-3 mb-4">{{ $judul }}</h1>
+        <p class="text-white/70 max-w-xl font-jakarta">Daftar rincian {{ strtolower($judul) }} yang dimiliki oleh Pemerintah {{ ucwords(setting('sebutan_desa')) }}.</p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1440 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full" style="display:block">
+            <path d="M0 50 L0 25 Q360 0 720 25 Q1080 50 1440 25 L1440 50 Z" fill="#f9fafb"/>
+        </svg>
+    </div>
+</section>
+
+{{-- KONTEN --}}
+<div class="bg-gray-50 min-h-screen py-16">
+    <div class="container mx-auto px-4 max-w-7xl">
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 p-6 lg:p-8 font-jakarta mb-8">
+            <div class="mb-6 border-b border-gray-100 pb-4">
+                <h1 class="text-2xl font-extrabold text-[#0D2247]">{{ $judul }}</h1>
             </div>
-            <div class="box-body">
-                <div class="table-responsive content">
-                    <table id="inventaris" class="table table-bordered dataTable table-hover">
-                        <thead class="bg-gray">
-                            <tr>
-                                <th class="text-center" rowspan="2">No</th>
-                                <th class="text-center" rowspan="2">Nama Barang</th>
-                                <th class="text-center" rowspan="2">Kode Barang / Nomor Registrasi</th>
-                                <th class="text-center" rowspan="2">Kondisi (B, KB, RB)</th>
-                                <th class="text-center" rowspan="2">Jenis Konstruksi</th>
-                                <th class="text-center" rowspan="2">Luas (M<sup>2</sup>)</th>
-                                <th class="text-center" colspan="2">Dokumen Kepemilikan</th>
-                                <th class="text-center" rowspan="2">Status Tanah</th>
-                                <th class="text-center" rowspan="2">Asal Usul</th>
-                                <th class="text-center" rowspan="2">Harga (Rp)</th>
-                            </tr>
-                            <tr>
-                                <th class="text-center" style="text-align:center;" rowspan="1">Tanggal</th>
-                                <th class="text-center" style="text-align:center;" rowspan="1">Nomor</th>
-                            </tr>
-                        </thead>
-                        <tbody id="inventaris-tbody">
-
-                        </tbody>
-
-                        <tfoot id="inventaris-tfoot">
-                            <tr>
-                                <th colspan="10" class="text-right">Total:</th>
-                                <th class="total"></th>
-                            </tr>
-                        </tfoot>
-
-                    </table>
-                </div>
+            <div class="overflow-x-auto w-full">
+                <table id="inventaris" class="table-modern w-full text-left text-sm">
+                    <thead>
+                        <tr>
+                            <th class="rounded-tl-xl text-center" rowspan="2">No</th>
+                            <th class="text-center" rowspan="2">Nama Barang</th>
+                            <th class="text-center" rowspan="2">Kode Barang / Nomor Registrasi</th>
+                            <th class="text-center" rowspan="2">Kondisi (B, KB, RB)</th>
+                            <th class="text-center" rowspan="2">Jenis Konstruksi</th>
+                            <th class="text-center" rowspan="2">Luas (M<sup>2</sup>)</th>
+                            <th class="text-center" colspan="2">Dokumen Kepemilikan</th>
+                            <th class="text-center" rowspan="2">Status Tanah</th>
+                            <th class="text-center" rowspan="2">Asal Usul</th>
+                            <th class="rounded-tr-xl text-center" rowspan="2">Harga (Rp)</th>
+                        </tr>
+                        <tr>
+                            <th class="text-center" rowspan="1">Tanggal</th>
+                            <th class="text-center" rowspan="1">Nomor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inventaris-tbody">
+                    </tbody>
+                    <tfoot id="inventaris-tfoot">
+                        <tr>
+                            <th colspan="10" class="text-right font-bold bg-gray-50 border-t-2 border-gray-200">Total:</th>
+                            <th class="text-right total font-bold text-[#0D2247] bg-gray-50 border-t-2 border-gray-200"></th>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
         </div>
-    @endsection
+    </div>
+</div>
+@endsection
 
     @push('scripts')
         <script type="text/javascript">

@@ -272,7 +272,7 @@ function heroCarousel() {
                         <span class="text-accent font-extrabold tracking-[0.2em] text-xs uppercase">Statistik</span>
                         <h2 class="text-4xl font-bold text-primary mt-2">Data Penduduk</h2>
                     </div>
-                    <a href="{{ site_url('statistik/0') }}" class="bg-primary/5 text-primary px-6 py-2 rounded-full font-bold hover:bg-primary text-sm hover:text-white transition">Selengkapnya</a>
+                    <a href="{{ site_url('data-statistik') }}" class="bg-primary/5 text-primary px-6 py-2 rounded-full font-bold hover:bg-primary text-sm hover:text-white transition">Selengkapnya</a>
                 </div>
                 
                 <div id="penduduk-chart" class="flex-grow bg-white p-6 rounded-3xl border border-gray-100 shadow-xl"></div>
@@ -282,7 +282,7 @@ function heroCarousel() {
 </section>
 
 <!-- 9. SECTION LAYANAN MANDIRI (Modern Split Layout) -->
-<section class="py-24 bg-gray-50" id="layanan-mandiri">
+<section class="hidden py-24 bg-gray-50" id="layanan-mandiri">
     <div class="container mx-auto px-4 max-w-6xl">
         <div class="text-center mb-12">
             <span class="text-accent font-extrabold tracking-[0.2em] text-xs uppercase">Akses Warga</span>

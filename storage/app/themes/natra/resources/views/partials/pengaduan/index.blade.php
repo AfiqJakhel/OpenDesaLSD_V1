@@ -423,7 +423,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         <h4 class="modal-title"><i class="fa fa-pencil"></i> Buat Pengaduan Baru</h4>
                     </div>
-                    <form action="{{ $form_action }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ $form_action }}" method="POST" enctype="multipart/form-data" id="validasi-proses">
                         <div class="modal-body">
                             <!-- Notifikasi -->
                             @include('theme::commons.notifikasi')

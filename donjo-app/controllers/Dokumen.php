@@ -139,7 +139,7 @@ class Dokumen extends Admin_Controller
                 return '<span class="label ' . $badgeClass . '">' . $statusLabel . '</span>';
             })
             ->editColumn('keterangan', static fn ($row) => empty($row->keterangan) ? '-' : $row->keterangan)
-            ->addColumn('tanggal_terbit', static fn ($row) => Carbon::createFromFormat('Y-m-d', $row->published_at)->translatedFormat('d F Y'))
+            ->addColumn('tanggal_terbit', static fn ($row) => empty($row->published_at) || $row->published_at == '0000-00-00' ? '-' : Carbon::parse($row->published_at)->translatedFormat('d F Y'))
             ->addColumn('retensi', static fn ($row) => $row->expired_at_formatted)
             ->rawColumns(['ceklist', 'aksi', 'status'])
             ->make();

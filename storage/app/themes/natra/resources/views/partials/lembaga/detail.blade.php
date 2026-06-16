@@ -24,7 +24,10 @@
                     var tipe = detail.tipe;
                     var gambar_desa = detail.logo;
 
-                    var detailElemen = `<h2 class="post_titile">Data ${tipe} ${detail.nama}</h2>
+                    var detailElemen = `<div class="single_category wow fadeInDown">
+                <h2> <span class="bold_line"><span></span></span> <span class="solid_line"></span> <span class="title_text">Data ${tipe} ${detail.nama}</span> </h2>
+            </div>
+            <div class="single_page_content" style="margin-bottom:10px;">
                 <h3 class="post_titile">Rinci Data ${tipe}</h3>
                 <div class="table-responsive">
                     <table class="table table-striped table-bordered">
@@ -107,6 +110,7 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
                 `;
 
                     $('#kelompok-wrapper').html(detailElemen + pengurusElemen + anggotaElemen);

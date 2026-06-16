@@ -98,9 +98,6 @@ class LapakPelapakAdminController extends AdminModulController
                                 <a href="' . site_url("lapak_admin/produk_form?id_pelapak={$row->id}") . '" class="btn btn-social btn-block btn-sm"><i class="fa fa-plus"></i> Tambah Produk Baru di Lapak Ini</a>
                             </li>';
 
-                    $aksi .= '<li>
-                                <a href="' . site_url("lapak_admin/pelapak_maps/{$row->id}") . '" class="btn btn-social btn-block btn-sm"><i class="fa fa-map"></i> Lihat Peta Lokasi Lapak</a>
-                            </li>';
 
                     $aksi .= '</ul></div>';
                     return $aksi;

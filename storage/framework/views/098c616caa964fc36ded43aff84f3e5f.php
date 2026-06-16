@@ -76,22 +76,10 @@
                     </div>
                 </div>
 
-                <!-- Dropdown: Produk Hukum -->
-                <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-                    <button @click="open = !open" class="flex items-center gap-1.5 text-white/90 hover:text-white font-medium text-sm tracking-widest transition py-2">
-                        Produk Hukum
-                        <i class="fas fa-chevron-down text-[10px] text-white/70 transition-transform duration-200" :class="{ 'rotate-180': open }"></i>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-2"
-                        class="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden z-50" x-cloak>
-                        <a href="<?php echo e(site_url('peraturan-desa')); ?>" class="block px-5 py-3 text-gray-700 hover:bg-primary hover:text-white transition text-sm font-medium">
-                            <i class="fas fa-gavel w-5 mr-2 text-center"></i> Peraturan Desa
-                        </a>
-                        <a href="<?php echo e(site_url('informasi-publik')); ?>" class="block px-5 py-3 text-gray-700 hover:bg-primary hover:text-white transition text-sm font-medium">
-                            <i class="fas fa-file-signature w-5 mr-2 text-center"></i> SK Kepala Desa
-                        </a>
-                    </div>
-                </div>
+                <!-- Link: Produk Hukum -->
+                <a href="<?php echo e(site_url('informasi-publik')); ?>" class="text-white/90 hover:text-white font-medium text-sm tracking-widest transition py-2">
+                    Produk Hukum
+                </a>
 
                 <!-- Dropdown: Informasi -->
                 <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
@@ -122,7 +110,7 @@
 
             <!-- Bagian Kanan: Ikon Aksesibilitas -->
             <div class="flex items-center gap-6">
-                <a href="<?php echo e(site_url('layanan-mandiri')); ?>" class="text-white/90 hover:text-white transition text-lg" aria-label="Layanan Mandiri">
+                <a href="<?php echo e(site_url('layanan-mandiri')); ?>" class="hidden text-white/90 hover:text-white transition text-lg" aria-label="Layanan Mandiri">
                     <i class="fas fa-user-circle"></i>
                 </a>
                 
@@ -181,16 +169,9 @@
             </div>
 
             <!-- Mobile: Produk Hukum -->
-            <div x-data="{ sub: false }">
-                <button @click="sub = !sub" class="w-full text-left px-6 py-3 text-white/90 font-medium text-sm hover:bg-white/10 transition flex items-center justify-between">
-                    <span><i class="fas fa-gavel w-6 mr-2"></i> Produk Hukum</span>
-                    <i class="fas fa-chevron-down text-[10px] transition-transform" :class="{ 'rotate-180': sub }"></i>
-                </button>
-                <div x-show="sub" x-transition class="bg-primary-200">
-                    <a href="<?php echo e(site_url('peraturan-desa')); ?>" class="block px-10 py-2.5 text-white/80 text-sm hover:bg-white/10 transition">Peraturan Desa</a>
-                    <a href="<?php echo e(site_url('informasi-publik')); ?>" class="block px-10 py-2.5 text-white/80 text-sm hover:bg-white/10 transition">SK Kepala Desa</a>
-                </div>
-            </div>
+            <a href="<?php echo e(site_url('informasi-publik')); ?>" class="block px-6 py-3 text-white/90 font-medium text-sm hover:bg-white/10 transition">
+                <i class="fas fa-gavel w-6 mr-2"></i> Produk Hukum
+            </a>
 
             <!-- Mobile: Informasi -->
             <div x-data="{ sub: false }">
@@ -208,7 +189,7 @@
             </div>
 
             <!-- Mobile: Layanan Mandiri -->
-            <a href="<?php echo e(site_url('layanan-mandiri')); ?>" class="block px-6 py-3 text-white font-medium text-sm hover:bg-white/10 transition mt-2 border-t border-white/10">
+            <a href="<?php echo e(site_url('layanan-mandiri')); ?>" class="hidden px-6 py-3 text-white font-medium text-sm hover:bg-white/10 transition mt-2 border-t border-white/10">
                 <i class="fas fa-user-shield w-6 mr-2"></i> Layanan Mandiri
             </a>
         </div>

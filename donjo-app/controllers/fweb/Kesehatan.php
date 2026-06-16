@@ -340,7 +340,7 @@ class Kesehatan extends Web_Controller
             $defaultIbuHamilTahun->tahun = date('Y');
             $dataTahun                   = collect([$defaultIbuHamilTahun]);
         }
-        $data['title']      = 'e-' . ucwords($slug);
+        $data['title']      = 'Data Kesehatan Ibu & Anak';
         $data['idPosyandu'] = $idPosyandu;
         $data['dataTahun']  = $dataTahun;
         $data['kuartal']    = $kuartal;

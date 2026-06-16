@@ -1,6 +1,7 @@
 @push('css')
     <!-- bootstrap datepicker -->
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap-datepicker.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap-datetimepicker.min.css') }}">
     <?php if (cek_koneksi_internet()): ?>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <?php endif ?>
@@ -21,10 +22,21 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <?php endif ?>
     <!-- Script-->
-    <script src="{{ asset('js/custom-datetimepicker.js') }}"></script>
+    <script src="{{ asset('js/custom-datetimepicker.js?v=' . (time()+2)) }}"></script>
     <script>
         $.extend($.fn.datetimepicker.defaults, {
-            timeZone: `<?= date_default_timezone_get() ?>`
+            timeZone: `<?= date_default_timezone_get() ?>`,
+            icons: {
+                time: "fa fa-clock-o",
+                date: "fa fa-calendar",
+                up: "fa fa-arrow-up",
+                down: "fa fa-arrow-down",
+                previous: "fa fa-chevron-left",
+                next: "fa fa-chevron-right",
+                today: "fa fa-clock-o",
+                clear: "fa fa-trash-o",
+                close: "fa fa-remove"
+            }
         });
 
         moment.tz.setDefault(`<?= date_default_timezone_get() ?>`);

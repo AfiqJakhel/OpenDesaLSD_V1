@@ -3,7 +3,10 @@
 
 @section('content')
     <div class="single_page_area">
-        <h2 class="post_titile">Data Inventaris {{ ucwords(setting('sebutan_desa')) }}</h2>
+        <div class="single_category wow fadeInDown">
+            <h2> <span class="bold_line"><span></span></span> <span class="solid_line"></span> <span class="title_text">Data Inventaris {{ ucwords(setting('sebutan_desa')) }}</span> </h2>
+        </div>
+        <div class="single_page_content" style="margin-bottom:10px;">
         <div class="box-body">
             <div class="row">
                 <div class="col-sm-12">
@@ -46,6 +49,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 @endsection

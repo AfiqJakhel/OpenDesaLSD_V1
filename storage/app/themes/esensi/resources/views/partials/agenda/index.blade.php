@@ -48,8 +48,9 @@
     </div>
 </section>
 
+<div x-data="{ activeTab: 'mendatang' }">
 {{-- TAB NAVIGASI --}}
-<div class="bg-white shadow-sm sticky top-[96px] z-40 border-b border-gray-100" x-data="{ activeTab: 'mendatang' }">
+<div class="bg-white shadow-sm sticky top-[96px] z-40 border-b border-gray-100">
     <div class="container mx-auto px-4 max-w-7xl overflow-x-auto scrollbar-none">
         <div class="flex">
             <button @click="activeTab = 'mendatang'" :class="activeTab === 'mendatang' ? 'active' : ''" class="agenda-tab">
@@ -66,7 +67,7 @@
 </div>
 
 {{-- KONTEN --}}
-<div class="bg-gray-50 min-h-screen py-16" x-data="{ activeTab: 'mendatang' }">
+<div class="bg-gray-50 min-h-screen py-16">
 <div class="container mx-auto px-4 max-w-7xl">
 
     @php
@@ -238,6 +239,7 @@
         @endif
     </div>
 
+</div>
 </div>
 </div>
 
